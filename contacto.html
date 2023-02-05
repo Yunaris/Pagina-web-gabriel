@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Contacto - futbox</title>
+      <link rel="stylesheet"href="reset.css">
+      <link rel="stylesheet"href="style-contacto.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img id= imagen src="banner/logo-gabriel.png"></h1>
+                <nav>
+                   <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTANOS</a></li>
+        
+                   </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nombreApellido">Nombres y apellidos</label>
+                <input type="text" id="nombreApellido" class="input-patron" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" class="input-patron" required placeholder="ejemplo@dominio.com">
+
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" class="input-patron" required placeholder="(xx) xxx xxxxxxx">
+
+                <label for="mensaje">Mensaje</label>
+                <textarea cols="70" rows="10" id="mensaje" class="input-patron" required></textarea>
+
+               <fieldset>
+                 <legend> ¿Cómo le gustaría que lo contactaramos?</legend>
+
+                    <label for="email"><input type="radio" name="contacto" value="email" id="email">E-mail</label>
+                 
+                    <label for="telefono"><input type="radio" name="contacto" value="telefono" id="telefono">Teléfono</label>
+                 
+                    <label for="whatsaap"><input type="radio" name="contacto" value="whatsapp" id="whatsaap" checked>WhatsApp</label>
+                 
+               </fieldset>
+
+              
+
+              <label class="checkbox"> <input type="checkbox" checked>¿Le gustaría recibir novedades sobre nosotros?</label>
+
+                <input type="submit" value="Enviar formulario" class="botonEnviar">
+            </form>
+
+           
+        </main>
+        <footer>
+            <img src="banner/logo-gabriel.png" alt="Logotipo ancol">
+            <p class="copyright"> &copy Copyright futbox 2023</p>
+        </footer>
+
+    </body>
+
+
+</html>

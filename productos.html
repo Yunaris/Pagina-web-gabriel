@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+      <meta charset="UTF-8">
+      <title>Productos - futbox</title>
+      <link rel="stylesheet"href="reset.css">
+      <link rel="stylesheet"href="style.css">
+      <link rel="stylesheet" href="css/estilo.css">
+      <link rel="icon" href="data:,">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+
+    </head>
+
+    <body>
+        <header>
+            <div class="caja">
+                <h1><img id= imagen src="banner/logo-gabriel.png"></h1>
+                <nav>
+                   <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="productos.html">PRODUCTOS</a></li>
+                        <li><a href="contacto.html">CONTACTANOS</a></li>
+        
+                   </ul>
+                </nav>
+            </div>
+        </header>
+        <main>
+            <div class="camisetas">
+                <img class= "img-camisetas" src="banner/camiseta-de-futbol-arg.png">
+                <img class= "img-camisetas" src="banner/camiseta-de-futbol-peru.png">
+                <img class= "img-camisetas" src="banner/camiseta-de-futbol-negra.png">
+                <img class= "img-camisetas" src="banner/camiseta-de-futbol.png">
+                <img class= "img-camisetas" src="banner/camiseta-de-futbol 3.png">
+            </div>
+
+            <ul class="producto">
+                
+                <li>
+                    <h2>Tu caja sorpresa</h2>
+                    <img class= imagenproducto src="banner/vacio.png">
+                    <p class="descripcion">Incluye camiseta y otros elementos</p>
+                    <p class="precio">$200.000</p>
+                </li>
+               
+            </ul>
+
+            <fieldset class="tallas">
+                <p>¿Cúal es tu talla?</p>
+                <select class="select">
+                   <option>XS</option>
+                   <option>S</option>
+                   <option>M</option>
+                   <option>L</option>
+                   <option>XL</option>
+                 </select>
+             </fieldset>
+            
+             
+              <p class="texto-juego">Juega la ruleta para conocer que tipo de camiseta tendrás.</p>
+                         
+            
+            
+              <div class="vara"></div>
+              <div>
+                <img src="image/imagen.png" id="ruleta">
+              </div>
+              <div>
+                <div id="sonido" style="display: none;">
+                  <iframe src="sonido/ruleta.mp3" id="audio"></iframe>
+            
+                </div>
+              </div>
+            
+            
+              <script src="js/jquery.min.js"></script>
+              <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+              <script src="js/script.js"></script>
+             
+            
+        </main>
+        <footer>
+            <img src="banner/logo-gabriel.png" alt="Logotipo ancol">
+            <p class="copyright"> &copy Copyright futbox 2023</p>
+        </footer>
+
+    </body>
+
+
+</html>
